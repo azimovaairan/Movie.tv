@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог фильмов</title>
+    <link rel="stylesheet" href="catalog.css">
+    <!-- Подключение стилей Owl Carousel -->
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
+    <script defer src="catalog.js"></script>
+    
+</head>
+<body>
+
+
+
+  <header>
+    <div class="logo">FilmSite</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="catalog.html">Catalog</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </nav>
+      <div class="search-container">
+        <input type="text" placeholder="Поиск...">
+        <button id="themeToggle">🌙</button>
+      </div>
+  </header>
+
+
+
+
+        <section id="movie-carousel" class="movie-carousel">
+           
+<div class="movie-item">
+      <img src="./images/akvaman.jpg" alt="">
+      <h3>Akvaman</h3>
+</div>
+<div class="movie-item">
+    <img src="./images/avengers.jpg" alt="">
+    <h3>The Avengers</h3>
+</div>
+<div class="movie-item">
+  <img src="./images/dune.jpg" alt="">
+  <h3>Dune</h3>
+</div>
+<div class="movie-item">
+  <img src="./images/doctorstrance.jpg" alt="">
+  <h3>Doctor Strange</h3>
+</div>
+<div class="movie-item">
+  <img src="./images/deadpool.jpg" alt="">
+  <h3>Deadpool</h3>
+</div>
+<div class="movie-item">
+  <img src="./images/homealone.jpg" alt="">
+  <h3>Home Alone</h3>
+</div>
+<div class="movie-item">
+  <img src="./images/maninblack.jpg" alt="">
+  <h3>Man In Black</h3>
+</div>
+<div class="movie-item">
+  <img src="./images/mebeforeyou.jpg" alt="">
+  <h3>Me Before You</h3>
+</div>
+<div class="movie-item">
+  <img src="./images/shrek.jpg" alt="">
+  <h3>The Shrek</h3>
+</div>
+<div class="movie-item">
+  <img src="./images/spiderman.jpg" alt="">
+  <h3>Spider Man</h3>
+</div>
+<div class="movie-item">
+  <img src="./images/titanic.jpg" alt="">
+  <h3>Titanic</h3>
+</div>
+<div class="movie-item">
+  <img src="./images/pirates.jpg" alt="">
+  <h3>Pirates of the Caribbean</h3>
+</div>
+        </section>
+    </main>
+
+
+
+
+    <footer>
+      <div class="theaters">
+        <p>Адреса кинотеатров: Москва, Санкт-Петербург...</p>
+      </div>
+      <div class="socials">
+        <a href="#">Facebook</a>
+        <a href="#">Telegram</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </div>
+      <p class="footer-note">Сделано Иродой</p>
+    </footer>
+
+    <!-- Подключение jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Подключение скриптов Owl Carousel -->
+    <script src="owl.carousel.min.js"></script>
+    <script src="catalog.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#movie-carousel").owlCarousel({
+                items: 5, // Количество отображаемых фильмов одновременно
+                loop: true,
+                margin: 10,
+                nav: true, // Отображение стрелок
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

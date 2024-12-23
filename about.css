@@ -1,0 +1,215 @@
+*{
+    font-family:  Verdana, Geneva, Tahoma, sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+    
+    /* Общий стиль для раздела */
+.about-us-section {
+    background-color: #f9f9f9; /* Светлый фон */
+    padding: 50px 20px; /* Внутренние отступы */
+    text-align: center; /* Центрирование текста */
+    border-radius: 10px; /* Сглаженные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    max-width: 800px; /* Ограничение ширины */
+    margin: 0 auto; /* Центрирование блока */
+    margin-top: 50px;
+}
+
+/* Заголовок */
+.about-us-section h1 {
+    font-size: 2.5em; /* Размер заголовка */
+    color: #ff7e5f; /* Темный цвет */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+/* Описание */
+.about-us-section p {
+    font-size: 1.2em; /* Размер текста */
+    color: #555; /* Серый цвет текста */
+    line-height: 1.6; /* Межстрочный интервал */
+    margin-bottom: 20px; /* Отступ между абзацами */
+}
+
+/* Список (если требуется) */
+.about-us-section ul {
+    list-style: none; /* Убираем маркеры */
+    padding: 0; /* Убираем внутренние отступы */
+}
+
+.about-us-section ul li {
+    font-size: 1.1em; /* Размер текста в списке */
+    color: #444; /* Цвет текста */
+    margin: 10px 0; /* Отступы между пунктами */
+    display: flex; /* Выравнивание для иконок */
+    align-items: center;
+}
+
+.about-us-section ul li::before {
+    content: '✔'; /* Иконка перед пунктом */
+    color: #ff5722; /* Цвет иконки */
+    margin-right: 10px; /* Отступ справа от иконки */
+}
+
+/* Кнопка обратной связи (если требуется) */
+.about-us-section .feedback-button {
+    display: inline-block; /* Кнопка в строке */
+    padding: 10px 20px; /* Внутренние отступы */
+    background-color: #ff5722; /* Оранжевый цвет кнопки */
+    color: #fff; /* Белый текст */
+    font-size: 1em; /* Размер текста */
+    border: none; /* Без границы */
+    border-radius: 5px; /* Сглаженные углы */
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.3s ease; /* Плавная анимация */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.about-us-section .feedback-button:hover {
+    background-color: #e64a19; /* Темнее при наведении */
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Градиентный фон */
+    border-bottom: 2px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: transform 0.3s ease;
+  }
+  
+  header .logo:hover {
+    transform: scale(1.1); /* Увеличение логотипа при наведении */
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+  
+  header nav ul li {
+    position: relative;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+  }
+  
+  header nav ul li a:hover {
+    color: #feb47b; /* Цвет при наведении */
+  }
+  
+  header nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #feb47b;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+  }
+  
+  header nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  header .search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  header input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  header input:focus {
+    outline: none;
+    border: 2px solid #feb47b;
+    box-shadow: 0 0 8px rgba(254, 180, 123, 0.5);
+  }
+  
+  header button {
+    background-color: #feb47b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  header button:hover {
+    background-color: #ff7e5f;
+    transform: scale(1.1); /* Увеличение кнопки при наведении */
+  }
+  /* Dark Mode */
+  body.dark-mode {
+    background-color: #121212;
+    color: #ff7e5f;
+  }
+  
+  body.dark-mode header {
+    background: linear-gradient(135deg, #363636, #000000);
+  }
+  
+  body.dark-mode header .logo {
+    color: #ff7e5f;
+  }
+  
+  body.dark-mode header nav ul li a {
+    color: #feb47b;
+  }
+  
+  body.dark-mode header button {
+    background-color: #3b3b3b;
+    color: #fff;
+  }
+  
+  body.dark-mode header button:hover {
+    background-color: #ff7e5f;
+  }
+  
+  
+  body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+  }
+  
+  #themeToggle {
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  section {
+    padding: 20px;
+  }
